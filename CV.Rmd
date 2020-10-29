@@ -1,0 +1,126 @@
+---
+name: Nathan
+surname: Quan
+position: "COVID-19 Case Investigator"
+address: "220 Park St. NE, Vienna, VA 22180"
+phone: +1 703 896 0064
+email: "nathan.quan@alumni.emory.edu"
+# twitter: nathanquan4
+docname: Curriculum Vitae
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+<!-- # Fields of Research & Interests -->
+
+<!--  * Social Epidemiology -->
+<!--  * Anthropology -->
+<!--  * Citizenship -->
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~Why,
+  "MPH Epidemiology", "2020", "Emory University Rollins School of Public Health", "Atlanta, GA", "Certificate: Socio-contextual Determinants of Health",
+  "MPH Epidemiology", "2020", "Emory University Rollins School of Public Health", "Atlanta, GA", "Thesis: Revealing the Variations in Impact of Economic Segregation on Preterm Birth Among Disaggregated Asian Ethnicities across MSAs in the United States: 2015-2017",
+  "B.S. Biochemistry", "2018", "Virginia Tech", "Blacksburg, VA", "Minor: Chemistry"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, Why)
+```
+
+
+# Professional Experience
+
+```{r}
+tribble(
+  ~ Title, ~ When, ~ Institution, ~ Where, ~ Why,
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Calls newly diagnosed cases and collects data on symptoms, exposures, and persons with whom they have been in contact while infectious",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Communicates with contacts in a professional and empathic manner, assuring them of the confidentiality of the information collected and explaining how the contact information will be utilized",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provides cases with approved information about state isolation procedures and monitors compliance with isolation",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Alerts Epidemiologists if the case is associated with a congregate or other high risk setting that requires additional public health investigation or intervention",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provide the ill individual with resources available for further information or support as needed based on established procedures",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Utilizes established database(s) to identify newly diagnosed patients. Inputs data collected (i.e. symptoms, contacts, etc.) into database and assures database is kept up to date",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provides data from Case Investigation efforts to Epidemiologists and/or Health Educators as necessary",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provided assistance to neighboring health districts as needed",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Performed outbreak and workplace exposure investigations",
+  
+  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Conducted analyses and wrote reports on biobehavioral (BBS) surveys and population size estimation for key populations",
+  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Monitored implementation of BBS surveys and population size estimation for key populations",
+  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Assisted in development of training materials for key populations surveillance trainings. Developed data dissemination tools and key population surveillance summary sheet guidelines for partner countries",
+  
+  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Expanded community-wide efforts to target efforts for suicide prevention using local suicide data",
+  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Conducted suicide data analysis using data from CDC WONDER to understand suicide trends over time compared to Peer Cities",
+  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Developed a literature review to assess local, state, and national goals for suicide reduction and prevention, recommendations for suicide screening, feasibility of implementing such screenings at the Louisville Metro Syringe Exchange Program (LMSEP), and suicide fatality reviews",
+  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Presented findings to the Louisville Health Advisory Board to express a clear vision for future research in Louisville regarding suicide prevention at a population health level and lay necessary groundwork for the Louisville Metro Department of Public Health to develop a suicide fatality review by the end of 2019",
+  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Created suicide prevention literature for LMSEP clients in the form of brochures to be circulated at LMSEP",
+  
+  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Identified the needs of older adults engaged in medication-assisted treatment for opioid use disorder and the providers who serve them",
+  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Assisted in conducting qualitative interviews and ethnographic observations; conducted health and demographic surveys; and coded qualitative data",
+  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Performed community needs assessment of clinics using American Community Survey, Health Professional Shortage Area, Medically Underserved Area/Population, and Area Deprivation Index data"
+) %>%
+  detailed_entries(Title, When, Institution, Where, Why)
+```
+
+
+<!-- # Publications -->
+
+```{r}
+# library(dplyr)
+# scholar::get_publications("EmD_lTEAAAAJ&EmD_lTEAAAAJ&") %>%
+#   filter(cites > 30) %>%
+#   distinct(title, .keep_all = TRUE) %>%
+#   transmute(bibtype = "Article", author = as.character(author),
+#             title = as.character(title),
+#             journaltitle = as.character(journal), year, key = row_number()) %>%
+#   RefManageR::as.BibEntry() %>%
+#   RefManageR::WriteBib("curie.bib")
+# 
+# bibliography_entries("curie.bib")
+```
+
+
+# Presentations
+
+```{r talks}
+tribble(
+  ~ when, ~ title, ~ details, ~ where,
+  "2019", "Applying Societal Health", "A Case Study at the Louisville Metro Department of Public Health and Wellness Against the Backdrop of a Pension Crisis", "Virginia Tech, Dept. of Science and Technology Studies",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details>", .open = "<", .close = ">"), when, where, .protect = FALSE)
+```
+
+
+# Skills
+
+```{r Skills}
+tribble(
+  ~Type, ~What,
+  "Programming Languages", "R, SAS, SQL",
+  
+  "Statistics", "linear regression, logistic regression, Poisson regression, survival analysis, inverse probability of treatment weighting analysis, mediation analysis, difference in differences, multilevel modeling",
+  
+  "Software", "ArcGIS , NVIVO, Microsoft Office",
+  
+  # "Languages", "Vietnamese (Speaking, Reading, and Writing: Beginner) and Khmer (Speaking: Beginner)"
+) %>%
+  detailed_entries(glue::glue("\\textbf{<Type>}: <What>", .open = "<", .close = ">"), .protect = FALSE)
+```
+
+
+# Awards
+
+```{r}
+tribble(
+  ~ award, ~ from, ~ year,
+  "Fulbright U.S. Student Finalist", "Cambodia", "2020",
+) %>%
+  brief_entries(award, year, from)
+```
