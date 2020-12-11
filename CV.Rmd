@@ -2,9 +2,9 @@
 name: Nathan
 surname: Quan
 position: "COVID-19 Case Investigator"
-address: "220 Park St. NE, Vienna, VA 22180"
-phone: +1 703 896 0064
-email: "nathan.quan@alumni.emory.edu"
+address: "`r keyring::key_get(service = 'my_address', username = 'nathansquan')`"
+phone: "`r keyring::key_get(service = 'my_cell', username = 'nathansquan')`"
+email: "`r keyring::key_get(service = 'my_email', username = 'nathansquan')`"
 # twitter: nathanquan4
 docname: Curriculum Vitae
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -29,8 +29,8 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~Why,
-  "MPH Epidemiology", "2020", "Emory University Rollins School of Public Health", "Atlanta, GA", "Certificate: Socio-contextual Determinants of Health",
-  "MPH Epidemiology", "2020", "Emory University Rollins School of Public Health", "Atlanta, GA", "Thesis: Revealing the Variations in Impact of Economic Segregation on Preterm Birth Among Disaggregated Asian Ethnicities across MSAs in the United States: 2015-2017",
+  "MPH Epidemiology", "2020", "Emory University, Rollins School of Public Health", "Atlanta, GA", "Certificate: Socio-contextual Determinants of Health",
+  "MPH Epidemiology", "2020", "Emory University, Rollins School of Public Health", "Atlanta, GA", "Thesis: Revealing the Variations in Impact of Economic Segregation on Preterm Birth Among Disaggregated Asian Ethnicities across MSAs in the United States: 2015-2017",
   "B.S. Biochemistry", "2018", "Virginia Tech", "Blacksburg, VA", "Minor: Chemistry"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, Why)
@@ -42,15 +42,15 @@ tribble(
 ```{r}
 tribble(
   ~ Title, ~ When, ~ Institution, ~ Where, ~ Why,
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Calls newly diagnosed cases and collects data on symptoms, exposures, and persons with whom they have been in contact while infectious",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Communicates with contacts in a professional and empathic manner, assuring them of the confidentiality of the information collected and explaining how the contact information will be utilized",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provides cases with approved information about state isolation procedures and monitors compliance with isolation",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Alerts Epidemiologists if the case is associated with a congregate or other high risk setting that requires additional public health investigation or intervention",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provide the ill individual with resources available for further information or support as needed based on established procedures",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Utilizes established database(s) to identify newly diagnosed patients. Inputs data collected (i.e. symptoms, contacts, etc.) into database and assures database is kept up to date",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provides data from Case Investigation efforts to Epidemiologists and/or Health Educators as necessary",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Provided assistance to neighboring health districts as needed",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health - Prince William Health District", "Manassas, VA", "Performed outbreak and workplace exposure investigations",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Calls newly diagnosed cases and collects data on symptoms, exposures, and persons with whom they have been in contact while infectious",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Communicates with contacts in a professional and empathic manner, assuring them of the confidentiality of the information collected and explaining how the contact information will be utilized",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provides cases with approved information about state isolation procedures and monitors compliance with isolation",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Alerts Epidemiologists if the case is associated with a congregate or other high risk setting that requires additional public health investigation or intervention",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provide the ill individual with resources available for further information or support as needed based on established procedures",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Utilizes established database(s) to identify newly diagnosed patients. Inputs data collected (i.e. symptoms, contacts, etc.) into database and assures database is kept up to date",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provides data from Case Investigation efforts to Epidemiologists and/or Health Educators as necessary",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provided assistance to neighboring health districts as needed",
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Performed outbreak and workplace exposure investigations",
   
   "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Conducted analyses and wrote reports on biobehavioral (BBS) surveys and population size estimation for key populations",
   "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Monitored implementation of BBS surveys and population size estimation for key populations",
