@@ -27,8 +27,8 @@ pubs <- bibliography_entries("nsnquanpubs.bib")
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~Why,
-  "MPH Epidemiology", "2020", "Emory University, Rollins School of Public Health", "Atlanta, GA", "Certificate: Socio-contextual Determinants of Health",
   "MPH Epidemiology", "2020", "Emory University, Rollins School of Public Health", "Atlanta, GA", "Thesis: Revealing the Variations in Impact of Economic Segregation on Preterm Birth Among Disaggregated Asian Ethnicities across MSAs in the United States: 2015-2017",
+  "MPH Epidemiology", "2020", "Emory University, Rollins School of Public Health", "Atlanta, GA", "Certificate: Socio-contextual Determinants of Health",
   "B.S. Biochemistry", "2018", "Virginia Tech", "Blacksburg, VA", "Minor: Chemistry"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, Why)
@@ -40,9 +40,18 @@ tribble(
 ```{r}
 tribble(
   ~ Title, ~ When, ~ Institution, ~ Where, ~ Why,
+  
+  "Social Science Research Analyst", "April 2022-present", "Centers for Medicare & Medicaid Services", "Baltimore, MD", "Developed a Shiny application for state Medicaid representatives to perform exploratory data analysis on 19 million Medicaid opioid claims",
+  "Social Science Research Analyst", "April 2022-present", "Centers for Medicare & Medicaid Services", "Baltimore, MD", "Engineered a data pipeline to extract and transform claims data across multiple tables monthly for the Shiny app, and load the data into the app, optimizing storage by reducing data file size by 400%",
+  "Social Science Research Analyst", "April 2022-present", "Centers for Medicare & Medicaid Services", "Baltimore, MD", "Created and taught a 6-hour course on statistical sampling and overpayment estimation to 30 Administrative Law Judges that will preside over overpayment appeals cases",
+  
+  "Epidemiologist I", "Dec 2021-April 2022", "Maryland Department of Health, Center for Viral Hepatitis", "Baltimore, MD", "Managed Hepatitis C Virus Rapid Testing Program data across 15 local health departments and various academic, state government, and community-based organization partners",
+  "Epidemiologist I", "Dec 2021-April 2022", "Maryland Department of Health, Center for Viral Hepatitis", "Baltimore, MD", "Established partnerships with Centers across the Infectious Disease Prevention and Health Promotion Bureau to integrate hepatitis testing and linkage to care",
+  "Epidemiologist I", "Dec 2021-April 2022", "Maryland Department of Health, Center for Viral Hepatitis", "Baltimore, MD", "Developed a state viral hepatitis outbreak detection and response plan in collaboration with staff from the Division of Infectious Disease Surveillance",
+
   "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed IRB protocol for independent research",
   "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Conducted qualitative interviews with key stakeholders to understand past experiences, perspectives, and facilitators and barriers to working with stateless Vietnamese communities in Cambodia",
-  "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed qualitative interview guides and  quantitative surveys",
+  "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed qualitative interview guides and quantitative surveys",
   
   "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Called newly diagnosed cases and collected data on symptoms, exposures, and persons with whom they had been in contact while infectious",
   "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provided cases with approved information about state isolation procedures and sought information on cases' close contacts",
@@ -68,7 +77,6 @@ tribble(
 ```
 
 
-\newpage
 
 
 
@@ -77,11 +85,11 @@ tribble(
 ```{r Skills}
 tribble(
   ~Type, ~What,
-  "Programming Languages", "R, SAS",
+  "Programming/Database", "R, Shiny, SAS, SQL, HTML, CSS",
   
   "Statistics", "linear regression, logistic regression, Poisson regression, survival analysis, inverse probability of treatment weighting analysis, mediation analysis, difference in differences, multilevel modeling",
   
-  "Software", "Git/GitHub, ArcGIS , NVIVO, Microsoft Office",
+  "Software", "Git/GitHub, Tableau, ArcGIS , NVIVO, Microsoft Office",
   
   # "Languages", "Vietnamese (Speaking, Reading, and Writing: Beginner) and Khmer (Speaking: Beginner)"
 ) %>%

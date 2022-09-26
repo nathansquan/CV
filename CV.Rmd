@@ -1,27 +1,26 @@
 ---
 name: Nathan
 surname: Quan
-position: "COVID-19 Case Investigator"
-address: "`r keyring::key_get(service = 'my_address', username = 'nathansquan')`"
-phone: "`r keyring::key_get(service = 'my_cell', username = 'nathansquan')`"
+position: "Fulbright U.S. Student Finalist"
+# address: "`r keyring::key_get(service = 'my_address', username = 'nathansquan')`"
+# phone: "`r keyring::key_get(service = 'my_cell', username = 'nathansquan')`"
 email: "`r keyring::key_get(service = 'my_email', username = 'nathansquan')`"
-# twitter: nathanquan4
 docname: Curriculum Vitae
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
 output: vitae::awesomecv
+bibliography_published: "nsnquanpubs.bib" # use separate .bib files and assign each of them a unique key: bibliography_*
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
+library(RefManageR)
+# Read any bib files
+pubs <- bibliography_entries("nsnquanpubs.bib")
 ```
 
-<!-- # Fields of Research & Interests -->
 
-<!--  * Social Epidemiology -->
-<!--  * Anthropology -->
-<!--  * Citizenship -->
 
 # Education
 
@@ -41,32 +40,16 @@ tribble(
 
 ```{r}
 tribble(
-  ~ Title, ~ When, ~ Institution, ~ Where, ~ Why,
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Calls newly diagnosed cases and collects data on symptoms, exposures, and persons with whom they have been in contact while infectious",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Communicates with contacts in a professional and empathic manner, assuring them of the confidentiality of the information collected and explaining how the contact information will be utilized",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provides cases with approved information about state isolation procedures and monitors compliance with isolation",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Alerts Epidemiologists if the case is associated with a congregate or other high risk setting that requires additional public health investigation or intervention",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provide the ill individual with resources available for further information or support as needed based on established procedures",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Utilizes established database(s) to identify newly diagnosed patients. Inputs data collected (i.e. symptoms, contacts, etc.) into database and assures database is kept up to date",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provides data from Case Investigation efforts to Epidemiologists and/or Health Educators as necessary",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provided assistance to neighboring health districts as needed",
-  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Performed outbreak and workplace exposure investigations",
+  ~ Title, ~ When, ~ Institution, ~ Where,
+  "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA",
   
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Conducted analyses and wrote reports on biobehavioral (BBS) surveys and population size estimation for key populations",
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Monitored implementation of BBS surveys and population size estimation for key populations",
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Assisted in development of training materials for key populations surveillance trainings. Developed data dissemination tools and key population surveillance summary sheet guidelines for partner countries",
+  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA",
   
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Expanded community-wide efforts to target efforts for suicide prevention using local suicide data",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Conducted suicide data analysis using data from CDC WONDER to understand suicide trends over time compared to Peer Cities",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Developed a literature review to assess local, state, and national goals for suicide reduction and prevention, recommendations for suicide screening, feasibility of implementing such screenings at the Louisville Metro Syringe Exchange Program (LMSEP), and suicide fatality reviews",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Presented findings to the Louisville Health Advisory Board to express a clear vision for future research in Louisville regarding suicide prevention at a population health level and lay necessary groundwork for the Louisville Metro Department of Public Health to develop a suicide fatality review by the end of 2019",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Created suicide prevention literature for LMSEP clients in the form of brochures to be circulated at LMSEP",
+  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY",
   
-  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Identified the needs of older adults engaged in medication-assisted treatment for opioid use disorder and the providers who serve them",
-  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Assisted in conducting qualitative interviews and ethnographic observations; conducted health and demographic surveys; and coded qualitative data",
-  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Performed community needs assessment of clinics using American Community Survey, Health Professional Shortage Area, Medically Underserved Area/Population, and Area Deprivation Index data"
+  "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA"
 ) %>%
-  detailed_entries(Title, When, Institution, Where, Why)
+  detailed_entries(Title, When, Institution, Where)
 ```
 
 
@@ -87,23 +70,13 @@ tribble(
 ```
 
 
-# Presentations
-
-```{r talks}
-tribble(
-  ~ when, ~ title, ~ details, ~ where,
-  "2019", "Applying Societal Health", "A Case Study at the Louisville Metro Department of Public Health and Wellness Against the Backdrop of a Pension Crisis", "Virginia Tech, Dept. of Science and Technology Studies",
-) %>% 
-  brief_entries(glue::glue("\\textbf{<title>}: <details>", .open = "<", .close = ">"), when, where, .protect = FALSE)
-```
-
 
 # Skills
 
 ```{r Skills}
 tribble(
   ~Type, ~What,
-  "Programming Languages", "R, SAS, SQL",
+  "Programming Languages", "R, SAS",
   
   "Statistics", "linear regression, logistic regression, Poisson regression, survival analysis, inverse probability of treatment weighting analysis, mediation analysis, difference in differences, multilevel modeling",
   
@@ -115,6 +88,22 @@ tribble(
 ```
 
 
+# Publications
+
+```{r Publications}
+pubs
+```
+
+# Presentations
+
+```{r talks}
+tribble(
+  ~ when, ~ title, ~ details, ~ where,
+  "2019", "Applying Societal Health", "A Case Study at the Louisville Metro Department of Public Health and Wellness Against the Backdrop of a Pension Crisis", "Virginia Tech, Dept. of Science and Technology Studies",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details>", .open = "<", .close = ">"), when, where, .protect = FALSE)
+```
+
 # Awards
 
 ```{r}
@@ -124,3 +113,64 @@ tribble(
 ) %>%
   brief_entries(award, year, from)
 ```
+
+# Relevant Skills
+\begin{cvskills}
+  \cvskill
+    {Braille}
+    {UEB (Unified English Braille), Nemeth (Math), Korean, Japanese Brailles}
+
+  \cvskill
+    {Data Science}
+    {R (highly advanced: published 3 packages in CRAN), Python (advanced: tensorflow/keras/scikit-learn), SQL}
+
+  \cvskill
+    {Reproducible Report}
+    {Markdown/Rmarkdown, R shiny apps, Jupyter Notebook, LaTeX, Pandoc, lua}
+
+  \cvskill
+    {DevOps}
+    {Git, Docker, AWS, Travis CI, Cygwin}
+
+  \cvskill
+    {Front-End}
+    {HTML/CSS/JS/PHP/ARIA (advanced level to design according to WCAG 2.0/2.1), WordPress, Drupal, Hugo}
+
+  \cvskill
+    {Back-End}
+    {Unix/Linux Shell scripts, LAMP, Django, REST API}
+
+  \cvskill
+    {Compile Programming Languages}
+    {C/C++/C\#, Java, Quorum}
+
+  \cvskill
+    {Quantitative Research}
+    {t-test, within-/between-subjects/Repeated Measures ANOVAs/ANCOVAs/MANOVAs/MANCOVAs, Regressions, \newline HLM, Factor Analysis, Network Analysis, SEM, PCA, Unsupervised/Supervised Machine Learning}
+
+  \cvskill
+    {Qualitative Research}
+    {Virtual Ethnography, Content Analysis, Grounded Theory, Phenomenology, Case Studies, Interaction Analysis}
+
+  \cvskill
+    {Mixed Research}
+    {Text Mining, Quantitative Ethnography, Explanatory/Exploratory Sequential Mixed Methods}
+
+  \cvskill
+    {Languages}
+    {English/Korean (bilingual)}
+\end{cvskills}
+
+
+# Peer-reviewed Publications
+
+<!-- Notes: copy and paste the following block for any other bibliography sections with the same bibliography key matched that you assigned in YAML  -->
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#bibliography_published}
+:::
+
+\endgroup
+<!-- Bib-printing block ends here. -->
