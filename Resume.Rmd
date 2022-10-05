@@ -41,33 +41,34 @@ tribble(
 tribble(
   ~ Title, ~ When, ~ Institution, ~ Where, ~ Why,
   
-  "Social Science Research Analyst", "April 2022-present", "Centers for Medicare & Medicaid Services", "Baltimore, MD", "Developed a Shiny application for state Medicaid representatives to perform exploratory data analysis on 19 million Medicaid opioid claims",
-  "Social Science Research Analyst", "April 2022-present", "Centers for Medicare & Medicaid Services", "Baltimore, MD", "Engineered a data pipeline to extract and transform claims data across multiple tables monthly for the Shiny app, and load the data into the app, optimizing storage by reducing data file size by 400%",
-  "Social Science Research Analyst", "April 2022-present", "Centers for Medicare & Medicaid Services", "Baltimore, MD", "Created and taught a 6-hour course on statistical sampling and overpayment estimation to 30 Administrative Law Judges that will preside over overpayment appeals cases",
+  "Research Analyst", "April 2022-present", "Centers for Medicare and Medicaid Services", "Baltimore, MD", "Developed a Shiny application utilizing test-driven development (TDD) for state Medicaid representatives to perform exploratory data analysis supporting fraud, waste, and abuse projects on 19 million Medicaid opioid claims",
+  "Research Analyst", "April 2022-present", "Centers for Medicare and Medicaid Services", "Baltimore, MD", "Engineered a data pipeline to extract and transform claims data across multiple tables monthly for the Shiny app, and load the data into the app, optimizing storage by reducing data file size by 400%",
+  "Research Analyst", "April 2022-present", "Centers for Medicare and Medicaid Services", "Baltimore, MD", "Lead and oversaw the development of models to detect potential fraud, waste, and abuse",
+  "Research Analyst", "April 2022-present", "Centers for Medicare and Medicaid Services", "Baltimore, MD", "Created and taught a 6-hour course on statistical sampling and overpayment estimation to 30 Administrative Law Judges that will preside over overpayment appeals cases",
   
   "Epidemiologist I", "Dec 2021-April 2022", "Maryland Department of Health, Center for Viral Hepatitis", "Baltimore, MD", "Managed Hepatitis C Virus Rapid Testing Program data across 15 local health departments and various academic, state government, and community-based organization partners",
   "Epidemiologist I", "Dec 2021-April 2022", "Maryland Department of Health, Center for Viral Hepatitis", "Baltimore, MD", "Established partnerships with Centers across the Infectious Disease Prevention and Health Promotion Bureau to integrate hepatitis testing and linkage to care",
   "Epidemiologist I", "Dec 2021-April 2022", "Maryland Department of Health, Center for Viral Hepatitis", "Baltimore, MD", "Developed a state viral hepatitis outbreak detection and response plan in collaboration with staff from the Division of Infectious Disease Surveillance",
 
-  "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed IRB protocol for independent research",
-  "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Conducted qualitative interviews with key stakeholders to understand past experiences, perspectives, and facilitators and barriers to working with stateless Vietnamese communities in Cambodia",
-  "U.S. Student Fulbright Finalist", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed qualitative interview guides and quantitative surveys",
+  "U.S. Student Fulbright Researcher", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed IRB protocol for independent research",
+  "U.S. Student Fulbright Researcher", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Conducted qualitative interviews with key stakeholders to understand past experiences, perspectives, and facilitators and barriers to working with stateless Vietnamese communities in Cambodia",
+  "U.S. Student Fulbright Researcher", "Mar 2021-Sept 2021", "RULE Center for the Study of Humanitarian Law", "Phnom Penh, Cambodia", "Developed qualitative interview guides and quantitative surveys",
   
   "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Called newly diagnosed cases and collected data on symptoms, exposures, and persons with whom they had been in contact while infectious",
   "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Provided cases with approved information about state isolation procedures and sought information on cases' close contacts",
   "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Utilized established databases to identify newly diagnosed patients, entered collected data into database and assured database was kept up to date",
   "COVID-19 Case Investigator", "Aug 2020-Feb 2021", "Virginia Department of Health, Prince William Health District", "Manassas, VA", "Performed outbreak and workplace exposure investigations",
   
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Conducted analyses and wrote reports on biobehavioral (BBS) surveys and population size estimation for key populations",
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Monitored implementation of BBS surveys and population size estimation for key populations",
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Assisted in development of training materials for key populations surveillance trainings",
-  "Emory REAL Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Developed data dissemination tools and key population surveillance summary sheet guidelines for partner countries",
+  "Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Conducted analyses and wrote reports on biobehavioral (BBS) surveys and population size estimation for key populations",
+  "Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Monitored implementation of BBS surveys and population size estimation for key populations",
+  "Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Assisted in development of training materials for key populations surveillance trainings",
+  "Graduate Research Assistant", "Oct 2019-May 2020", "CDC Division of Global HIV and TB", "Atlanta, GA", "Developed data dissemination tools and key population surveillance summary sheet guidelines for partner countries",
   
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Expanded community-wide efforts to target efforts for suicide prevention using local suicide data",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Conducted suicide data analyses using data from CDC WONDER to understand suicide trends over time compared to Peer Cities",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Developed a literature review to assess local, state, and national goals for suicide reduction and prevention, recommendations for suicide screening, feasibility of implementing such screenings at the Louisville Metro Syringe Exchange Program (LMSEP), and suicide fatality reviews",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Presented findings to the Louisville Health Advisory Board to express a clear vision for future research in Louisville regarding suicide prevention at a population health level",
-  "Pathways to Practice Scholar", "May 2019-Aug 2019", "Louisville Metro Dept. of Public Health", "Louisville, KY", "Created suicide prevention literature for LMSEP clients in the form of brochures to be circulated at LMSEP",
+  "Graduate Research Assistant", "May 2019-Aug 2019", "Louisville Metro Department of Public Health", "Louisville, KY", "Expanded community-wide efforts to target efforts for suicide prevention using local suicide data",
+  "Graduate Research Assistant", "May 2019-Aug 2019", "Louisville Metro Department of Public Health", "Louisville, KY", "Conducted suicide data analyses using data from CDC WONDER to understand suicide trends over time compared to Peer Cities",
+  "Graduate Research Assistant", "May 2019-Aug 2019", "Louisville Metro Department of Public Health", "Louisville, KY", "Developed a literature review to assess local, state, and national goals for suicide reduction and prevention, recommendations for suicide screening, feasibility of implementing such screenings at the Louisville Metro Syringe Exchange Program (LMSEP), and suicide fatality reviews",
+  "Graduate Research Assistant", "May 2019-Aug 2019", "Louisville Metro Department of Public Health", "Louisville, KY", "Presented findings to the Louisville Health Advisory Board to express a clear vision for future research in Louisville regarding suicide prevention at a population health level",
+  "Graduate Research Assistant", "May 2019-Aug 2019", "Louisville Metro Department of Public Health", "Louisville, KY", "Created suicide prevention literature for LMSEP clients in the form of brochures to be circulated at LMSEP",
   
   "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Identified the needs of older adults engaged in medication-assisted treatment for opioid use disorder and the providers who serve them",
     "Graduate Research Assistant", "Sept 2018-May 2019", "Emory University School of Medicine", "Atlanta, GA", "Assisted in conducting qualitative interviews and ethnographic observations; conducted health and demographic surveys; and coded qualitative data",
@@ -85,11 +86,12 @@ tribble(
 ```{r Skills}
 tribble(
   ~Type, ~What,
-  "Programming/Database", "R, Shiny, SAS, SQL, HTML, CSS",
+  "Programming/Database", "R, Shiny, SQL, Python (learning), HTML, CSS, Test-Driven Development, SAS",
   
-  "Statistics", "linear regression, logistic regression, Poisson regression, survival analysis, inverse probability of treatment weighting analysis, mediation analysis, difference in differences, multilevel modeling",
+  "Statistical Modeling", "survival analysis, inverse probability of treatment weighting analysis, mediation analysis, difference in differences, multilevel modeling",
+  "Machine Learning", "common supervised methods including generalized linear models (GLM), generalized additive models (GAM), random forests",
   
-  "Software", "Git/GitHub, Tableau, ArcGIS , NVIVO, Microsoft Office",
+  "Software", "Linux server environment, Git/GitHub, Tableau, ArcGIS , NVIVO, Microsoft Office",
   
   # "Languages", "Vietnamese (Speaking, Reading, and Writing: Beginner) and Khmer (Speaking: Beginner)"
 ) %>%
